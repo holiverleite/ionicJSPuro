@@ -22,34 +22,74 @@
                     <ion-col size-md="6" offset-md="3">
                         <ion-card>
                             <ion-card-header>
-                                <ion-card-title>Novo Gasto</ion-card-title>
+                                <ion-card-title>Novo Departamento</ion-card-title>
                             </ion-card-header>
                             <ion-card-content>
                                 <ion-item>
-                                    <ion-label position="floating">Gasto</ion-label>
+                                    <ion-label position="floating">Nome</ion-label>
                                     <ion-input type="text" id="input-gasto"></ion-input>
                                 </ion-item>
-                                <ion-item>
+                                <!-- <ion-item>
                                     <ion-label position="floating">Valor</ion-label>
                                     <ion-input type="number" id="input-valor"></ion-input>
-                                </ion-item>
+                                </ion-item> -->
                                 <div margin-vertical text-right>
                                     <ion-button fill="outline" color="danger" id="btn-limpar">
                                         <ion-icon slot="start" name="close"></ion-icon> Limpar
                                     </ion-button>
                                     <ion-button id="btn-enviar">
-                                        <ion-icon slot="start" name="add-circle"></ion-icon>Adicionar Depesa
+                                        <ion-icon slot="start" name="add-circle"></ion-icon>Cadastrar
                                     </ion-button>   
                                 </div>
                             </ion-card-content>
                         </ion-card> 
                     </ion-col>
                 </ion-row>
+
+                <ion-row>
+                    <!--Size de 1 até 12-->
+                    <ion-col size-md="6" offset-md="3">
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-card-title>Novo Funcionário</ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <ion-item>
+                                    <ion-label position="floating">Nome</ion-label>
+                                    <ion-input type="text" id="input-gasto"></ion-input>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label position="floating">Salário</ion-label>
+                                    <ion-input type="number" id="input-valor"></ion-input>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label>Departamento</ion-label>
+                                    <ion-select placeholder="Selecione um">
+                                      <!-- <ion-select-option value="f">Female</ion-select-option> -->
+                                      <ion-select-option>Nenhum</ion-select-option>
+                                    </ion-select>
+                                    <ion-input type="text" id="input-gasto"></ion-input>
+                                </ion-item>
+                                <div margin-vertical text-right>
+                                    <ion-button fill="outline" color="danger" id="btn-limpar">
+                                        <ion-icon slot="start" name="close"></ion-icon> Limpar
+                                    </ion-button>
+                                    <ion-button id="btn-enviar">
+                                        <ion-icon slot="start" name="add-circle"></ion-icon>Adicionar Despesa
+                                    </ion-button>   
+                                </div>
+                            </ion-card-content>
+                        </ion-card> 
+                    </ion-col>
+                </ion-row>
+
+
                 <ion-row>
                     <ion-col size-md="6" offset-md="3">
                         <ion-list id="lista-gastos"></ion-list>
                     </ion-col>
                 </ion-row>
+
                 <ion-row>
                     <ion-col size-md="6" offset-md="3">
                         <p margin>Gasto Total: <span: id="gastosTotais"></span></p>
